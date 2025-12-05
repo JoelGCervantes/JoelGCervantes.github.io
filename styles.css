@@ -1,7 +1,8 @@
 /* grid setup */
 body {
   background-color: #161618;
-  color: white;
+  color: #f8f9fa;
+
   margin: 0;
 }
 html {
@@ -20,7 +21,6 @@ html {
   grid-area: section;
   height: 70vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -28,6 +28,60 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  color: #f8f9fa;
+  position: relative;
+}
+
+.about-content {
+  display: flex;
+  gap: 2rem;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.headshot-img {
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.6);
+}
+
+#name {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+#weather {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+  backdrop-filter: blur(4px);
+  font-size: 1.1rem;
+  font-weight: 400;
+
+  align-content: center;
+}
+#weather .weather-label {
+  font-size: larger;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+#weather .weather-temp {
+  font-size: x-large;
+  font-weight: 700;
+  margin-right: 0.35rem;
+}
+
+#weather .weather-desc {
+  text-transform: capitalize;
+  opacity: 0.85;
 }
 
 .footer {
@@ -69,12 +123,6 @@ nav a:hover {
   color: silver;
   transition: 0.3s ease-in-out;
   opacity: 0.85;
-}
-
-#headshot {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
 }
 
 /* media display rules (mobile first) */
