@@ -9,8 +9,10 @@
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <title>Document</title>
+    <script defer src="main.js"></script>
+    <title>joelgc</title>
   </head>
+
   <body>
     <main class="grid-container">
       <header class="grid-item header">
@@ -25,15 +27,10 @@
         </nav>
       </header>
       <section id="about" class="grid-item section">
-        <figure>
-          <img
-            id="headshot"
-            src="imgs/Joel Garcia-Cervantes-13.jpg"
-            alt="Headshot of Joel"
-          />
-          <figcaption><h1>Joel Garcia-Cervantes</h1></figcaption>
-        </figure>
-        <p>Software Engineer focused on Applid ML</p>
+        <div class="about-content">
+          <h1 id="name"></h1>
+          <p id="weather"></p>
+        </div>
       </section>
       <article id="previous" class="grid-item article">
         <h2>Previous Work</h2>
@@ -146,11 +143,8 @@
                   alt="Example image of futAnalysis output video"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                  <h5 class="card-title">futAnalysis</h5>
+                  <p class="card-text">YOLOv8 computer vision project.</p>
                   <a
                     href="https://github.com/JoelGCervantes/futAnalysis"
                     target="_blank"
@@ -165,14 +159,11 @@
                 <img
                   src="imgs/ML_background4.png"
                   class="card-img-top"
-                  alt="..."
+                  alt="picture of a nueral network"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
-                  </p>
+                  <h5 class="card-title">NASA Digital Twin Wildfire Project</h5>
+                  <p class="card-text">Capstone project description.</p>
                   <a
                     href="https://arxiv.org/pdf/2202.11214"
                     target="_blank"
@@ -187,13 +178,12 @@
                 <img
                   src="imgs/homography.png"
                   class="card-img-top"
-                  alt="Resulting homography stiched image"
+                  alt="picture of resulting homography image stitching"
                 />
                 <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
+                  <h5 class="card-title">homography Image Stiching</h5>
                   <p class="card-text">
-                    Some quick example text to build on the card title and make
-                    up the bulk of the card's content.
+                    RANSAC homography image Stiching project.
                   </p>
                   <a
                     href="https://github.com/JoelGCervantes/homography-img-stitching"
@@ -226,6 +216,19 @@
         </div>
       </aside>
       <footer id="footer" class="grid-item footer">
+        <form action="#">
+          <label for="contact-name">Name</label>
+          <input type="text" id="contact-name" name="name" />
+          <label for="email"> Email </label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <button>Submit</button>
+        </form>
         <p>
           Email:
           <a href="mailto:youremail@example.com">g.joelcervantes@gmail.com</a>
