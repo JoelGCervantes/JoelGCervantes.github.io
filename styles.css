@@ -21,6 +21,7 @@ html {
 }
 
 .footer {
+  background-color: black;
   grid-area: footer;
 }
 
@@ -36,10 +37,9 @@ html {
   border: none;
   top: 0;
   left: 0;
-  width: 100%;
+  right: 0;
   background-color: #2d3b45;
-  margin: 0 -10px 0;
-  padding-bottom: 20px;
+  padding: 10px 0 20px;
 }
 /*navigation bar styles */
 nav ul {
@@ -52,20 +52,20 @@ nav ul {
   width: 100%;
 }
 
-nav li a,
-a:visited {
+nav a,
+nav a:visited {
   text-decoration: none;
   color: white;
 }
 
-nav li a:hover {
+nav a:hover {
   color: silver;
   transition: 0.3s ease-in-out;
   opacity: 0.85;
 }
 
 #about {
-  margin: -12px -10px 0;
+  margin: -6px -10px 0;
   background-image: url("imgs/ML_background4.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -128,6 +128,23 @@ nav li a:hover {
 }
 
 /* bootstrap css */
+
+.card {
+  --bs-card-bg: #212529;
+  --bs-card-color: white;
+}
+
+.card-img-top {
+  height: 250px;
+  width: 100%;
+}
+
+.btn-primary {
+  --bs-btn-bg: #031633;
+  --bs-btn-color: #6ea8fe;
+
+  --bs-btn-hover-bg: #031633;
+}
 .article .accordion {
   --bs-accordion-bg: #212529;
   --bs-accordion-color: #dee2e6;
