@@ -37,3 +37,27 @@ document.addEventListener("DOMContentLoaded", () => {
       weatherEl.textContent = "Unable to load weather right now.";
     });
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contact-form");
+  const nameInput = document.getElementById("contact-name");
+  const emailInput = document.getElementById("email");
+  const submittedMsg = document.getElementById("submitted-msg");
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    const name = nameInput.value.trim();
+    const email = emailInput.value.trim();
+
+    if (!name || !email) {
+      submittedMsg.textContent = "Please enter both your name and email.";
+      return;
+    }
+
+    submittedMsg.innerHTML = `
+      Thank you for submitting your name and email!<br />
+      <p>name: ${name} email: ${email}</p>
+    `;
+  });
+});

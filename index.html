@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
     <link rel="stylesheet" href="styles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
     <script defer src="main.js"></script>
     <title>joelgc</title>
   </head>
@@ -52,7 +58,7 @@
                 aria-expanded="true"
                 aria-controls="panelsStayOpen-collapseOne"
               >
-                Accordion Item #1
+                Technical Support Specialist (TCSS) - Portland State University
               </button>
             </h2>
             <div
@@ -60,15 +66,12 @@
               class="accordion-collapse collapse show"
             >
               <div class="accordion-body">
-                <strong>This is the first item's accordion body.</strong> It is
-                shown by default, until the collapse plugin adds the appropriate
-                classes that we use to style each element. These classes control
-                the overall appearance, as well as the showing and hiding via
-                CSS transitions. You can modify any of this with custom CSS or
-                overriding our default variables. It's also worth noting that
-                just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                I assist students in Professor Karla Fant's courses during their
+                assigned labs. I reinforce understanding of data structures,
+                algorithms, and memory management through hands-on
+                demonstrations and visual explanations to clarify complex
+                topics. I also support students with debugging, troubleshooting,
+                and applying effective problem-solving techniques.
               </div>
             </div>
           </div>
@@ -82,7 +85,7 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseTwo"
               >
-                Accordion Item #2
+                We in Computer Science (WiCS) - Portland State University
               </button>
             </h2>
             <div
@@ -90,15 +93,16 @@
               class="accordion-collapse collapse"
             >
               <div class="accordion-body">
-                <strong>This is the second item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                I participate as a club member and mentor WiCS at the PSU
+                campus. As a member I participate in code parties where I
+                collaborate with other computer science students on projects.
+                Recently I helped a new student code a simple portfolio website
+                using HTML/CSS and some light JavaScript.I also participate as a
+                mentor where I am paired up with a lower division student who I
+                provide guidance to. I try to give the advice that I would have
+                wanted to hear to my mentee. This has resulted in a clearer
+                understanding of the computer science major for them, and I look
+                forward to continueing to contribute and grow with this club.
               </div>
             </div>
           </div>
@@ -112,7 +116,8 @@
                 aria-expanded="false"
                 aria-controls="panelsStayOpen-collapseThree"
               >
-                Accordion Item #3
+                Society of Professional Hispanic Engineers (SHPE) - Portland
+                State University
               </button>
             </h2>
             <div
@@ -120,15 +125,20 @@
               class="accordion-collapse collapse"
             >
               <div class="accordion-body">
-                <strong>This is the third item’s accordion body.</strong> It is
-                hidden by default, until the collapse plugin adds the
-                appropriate classes that we use to style each element. These
-                classes control the overall appearance, as well as the showing
-                and hiding via CSS transitions. You can modify any of this with
-                custom CSS or overriding our default variables. It’s also worth
-                noting that just about any HTML can go within the
-                <code>.accordion-body</code>, though the transition does limit
-                overflow.
+                As Co-President of PSU's SHPE chapter, I lead a team of officers
+                to grow membership, run high-impact events, and create pathways
+                to internships and jobs. I set agendas, coordinate weekly
+                operations, and track deliverables so meetings, workshops, and
+                events run smoothly. Recently my board and I have decided to
+                focus on expanding our chapter. By creating a "members first"
+                mindset I have been able to lead our club to increase our event
+                attendance. I also maintain good communication with our Oregon
+                preffesional board to conitnue pushing for an increased number
+                of member sign ups. Since September of 2025 we have see a
+                significant increase in club interest with 10 new and
+                prospective members. Overall, I keep the chapter organized,
+                accountable, and focused on delivering professional development
+                and community for our members.
               </div>
             </div>
           </div>
@@ -137,67 +147,67 @@
       <aside id="projects" class="grid-item aside">
         <h2>Projects</h2>
         <div
-          id="carouselExampleAutoplaying"
+          id="carouselExampleInterval"
           class="carousel slide"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="card mx-auto" style="width: 100%">
-                <img
-                  src="imgs/futanalysis.png"
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="card">
+                <video
+                  src="videos/output_video.mp4"
                   class="card-img-top"
-                  alt="Example image of futAnalysis output video"
-                />
+                  aria-label="Demo of futAnalysis showing soccer match footage with live analytics overlays"
+                  autoplay
+                  loop
+                  muted
+                ></video>
                 <div class="card-body">
                   <h5 class="card-title">futAnalysis</h5>
-                  <p class="card-text">YOLOv8 computer vision project.</p>
-                  <a
-                    href="https://github.com/JoelGCervantes/futAnalysis"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Go somewhere</a
-                  >
+                  <p class="card-text">
+                    FUT ANALYSIS is a CV tool that transforms match footage into
+                    live analytics. I fine-tuned a YOLO detector, used
+                    interpolation for stable ball tracking, clustered jersey
+                    colors with K-Means to separate teams, and overlaid
+                    metrics—possession, player speed/distance, and ball
+                    trajectories—directly on video.
+                  </p>
+                  <a href="#" class="btn btn-primary">Project Github</a>
                 </div>
               </div>
             </div>
-            <div class="carousel-item">
-              <div class="card mx-auto" style="width: 100%">
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="card">
                 <img
                   src="imgs/ML_background4.png"
                   class="card-img-top"
-                  alt="picture of a nueral network"
+                  alt="..."
                 />
                 <div class="card-body">
-                  <h5 class="card-title">NASA Digital Twin Wildfire Project</h5>
-                  <p class="card-text">Capstone project description.</p>
-                  <a
-                    href="https://arxiv.org/pdf/2202.11214"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Go somewhere</a
-                  >
+                  <h5 class="card-title">NASA Digital Twin Wildfire</h5>
+                  <p class="card-text">
+                    Sponsored by Dr. Safa Mote, this project develops a wildfire
+                    forecasting tool to help utilities, agencies, researchers,
+                    and the public prepare for future wildfires. Our team is
+                    continuing prior capstone work across dynamical modeling,
+                    AI/ML forecasting, visualization, and web development.
+                  </p>
+                  <a href="#" class="btn btn-primary">FourCastNet</a>
                 </div>
               </div>
             </div>
             <div class="carousel-item">
-              <div class="card mx-auto" style="width: 100%">
-                <img
-                  src="imgs/homography.png"
-                  class="card-img-top"
-                  alt="picture of resulting homography image stitching"
-                />
+              <div class="card">
+                <img src="imgs/homography.png" class="card-img-top" alt="..." />
                 <div class="card-body">
-                  <h5 class="card-title">homography Image Stiching</h5>
+                  <h5 class="card-title">Homography Image Stitching</h5>
                   <p class="card-text">
-                    RANSAC homography image Stiching project.
+                    Image stitching using homography and RANSAC implements image
+                    stitching to create a panorama by aligning and blending two
+                    images using feature extraction, homography estimation, and
+                    warping techniques.
                   </p>
-                  <a
-                    href="https://github.com/JoelGCervantes/homography-img-stitching"
-                    target="_blank"
-                    class="btn btn-primary"
-                    >Go somewhere</a
-                  >
+                  <a href="#" class="btn btn-primary">Project Github</a>
                 </div>
               </div>
             </div>
@@ -205,7 +215,7 @@
           <button
             class="carousel-control-prev"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target="#carouselExampleInterval"
             data-bs-slide="prev"
           >
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -214,7 +224,7 @@
           <button
             class="carousel-control-next"
             type="button"
-            data-bs-target="#carouselExampleAutoplaying"
+            data-bs-target="#carouselExampleInterval"
             data-bs-slide="next"
           >
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
@@ -223,23 +233,25 @@
         </div>
       </aside>
       <footer id="footer" class="grid-item footer">
-        <form action="#">
+        <form id="contact-form" action="#">
           <label for="contact-name">Name</label>
-          <input type="text" id="contact-name" name="name" />
+          <input class="input" type="text" id="contact-name" name="name" />
           <label for="email"> Email </label>
           <input
+            class="input"
             type="email"
             id="email"
             name="email"
             placeholder="example@gmail.com"
           />
           <button>Submit</button>
+          <div id="submitted-msg"></div>
         </form>
-        <p>
+        <p class="contact-info">
           Email:
           <a href="mailto:youremail@example.com">g.joelcervantes@gmail.com</a>
         </p>
-        <p>
+        <p class="contact-info">
           LinkedIn:
           <a
             href="https://www.linkedin.com/in/joel-garcia-cervantes"
