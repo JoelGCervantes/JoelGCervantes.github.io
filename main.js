@@ -1,8 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const nameEl = document.getElementById("name");
   const weatherEl = document.getElementById("weather");
-
-  nameEl.textContent = "Joel Garcia-Cervantes";
 
   const apiKey = "6a0a3cbf0c8c2d1fd4a5dd9dedbc0c94";
   const lat = 45.5152;
@@ -54,7 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
       submittedMsg.textContent = "Please enter both your name and email.";
       return;
     }
-
     submittedMsg.innerHTML = `
       Thank you for submitting your name and email!<br />
       <p>name: ${name} email: ${email}</p>

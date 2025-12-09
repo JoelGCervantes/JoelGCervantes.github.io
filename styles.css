@@ -68,6 +68,7 @@ html {
 
   align-content: center;
 }
+
 #weather .weather-label {
   font-size: larger;
   font-weight: 600;
@@ -128,6 +129,10 @@ html {
 
 .contact-info {
   margin: 0.25rem 0;
+}
+
+.contact-info a {
+  color: #adb5bd;
 }
 
 .grid-item {
