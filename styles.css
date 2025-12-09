@@ -87,32 +87,36 @@ html {
 
 .footer {
   grid-area: footer;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
   margin-top: 5rem;
 }
 
-.footer input {
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  align-items: center;
+}
+
+#contact-form input {
+  width: 50%;
   background-color: #212529;
   color: gray;
   border: none;
   border-radius: 0.25rem;
-}
-
-.footer .input {
   margin-right: 0.5rem;
 }
 
-.footer button {
+#contact-form .form-btn {
   border: none;
+  width: 25%;
   background-color: #495057;
   color: #f8f9fa;
   border-radius: 0.25rem;
+  margin-top: 1rem;
   padding: 0.25rem;
 }
 
-.footer button:hover {
+#contact-form .form-btn:hover {
   opacity: 0.8;
 }
 
@@ -191,6 +195,18 @@ nav a:hover {
       "article aside"
       "footer footer";
   }
+  #contact-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #contact-form input {
+    width: 10rem;
+  }
+  #contact-form .form-btn {
+    margin-top: 0;
+    width: 5rem;
+  }
 }
 
 @media (min-width: 993px) {
@@ -206,6 +222,18 @@ nav a:hover {
       "aside article article"
       "footer footer footer";
   }
+
+  #contact-form {
+    flex-direction: row;
+    justify-content: center;
+  }
+  #contact-form input {
+    width: 10rem;
+  }
+  #contact-form .form-btn {
+    margin-top: 0;
+    width: 5rem;
+  }
 }
 
 /* bootstrap css */
@@ -213,7 +241,7 @@ nav a:hover {
 .accordion {
   height: 550px;
   overflow-y: scroll;
-  scrollbar-track-color: red;
+  scrollbar-color: #888 #161618;
   color: #f8f9fa;
 }
 
@@ -253,7 +281,7 @@ nav a:hover {
 .card-text {
   max-height: 300px;
   overflow-y: scroll;
-  scrollbar-width: none;
+  scrollbar-color: #888 #212529;
 }
 .card-body .btn:hover {
   color: #6ea8fe;
