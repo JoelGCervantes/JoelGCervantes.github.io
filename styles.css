@@ -182,7 +182,7 @@ nav a:hover {
   .grid-container {
     display: grid;
     min-height: 97vh;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto repeat(2, 1fr) auto;
     gap: 10px;
     grid-template-areas:
@@ -213,6 +213,7 @@ nav a:hover {
 .accordion {
   height: 550px;
   overflow-y: scroll;
+  scrollbar-track-color: red;
   color: #f8f9fa;
 }
 
@@ -236,6 +237,7 @@ nav a:hover {
   width: 80%;
   background-color: #212529;
 }
+
 .card-body {
   display: flex;
   flex-direction: column;
@@ -246,10 +248,18 @@ nav a:hover {
   border: 1px solid transparent;
   align-self: center;
   margin-top: auto;
-  width: 50%;
 }
 
+.card-text {
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
 .card-body .btn:hover {
   color: #6ea8fe;
   border: 1px solid #6ea8fe;
+}
+
+.card-img-top {
+  max-height: 200px;
 }
