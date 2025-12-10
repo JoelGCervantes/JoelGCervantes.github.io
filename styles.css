@@ -28,8 +28,6 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  color: #f8f9fa;
-  position: relative;
 }
 
 .about-content {
@@ -127,11 +125,9 @@ html {
   color: #adb5bd;
 }
 
-.contact-info {
+.contact-info,
+a {
   margin: 0.25rem 0;
-}
-
-.contact-info a {
   color: #adb5bd;
 }
 
@@ -147,7 +143,7 @@ html {
   left: 0;
   right: 0;
   background-color: #161618;
-  z-index: 1000;
+  z-index: 3;
 }
 /*navigation bar styles */
 nav ul {
