@@ -1,16 +1,12 @@
+Github Repo: https://github.com/JoelGCervantes/JoelGCervantes.github.io
+Deployed site: joelgcervantes.github.io
+
 Creating my portfoliio website using grid areas layout
 things not used in class
 '''
 grid-template-rows: auto;
 grid-auto-rows: auto;
 grid-template-rows: auto repeat(3, 1fr) auto;
-'''
-
-css variables
-In bootstrap css I use variables that are in the bootstrap css file and change their default values.
-'''
---bs-accordion-bg: #212529;
---bs-accordion-active-bg: #031633;
 '''
 
 1. choosing a page layout.
@@ -92,7 +88,7 @@ background-color: #031633;
 color: #6ea8fe;
 }
 '''
-One issue I ran into during this process what that for some reason I wanted each part of the grid to have a set height, so I needed to fidn a way to add scrolling functionality when expanding the accordion. When doing this it caused 2 other issues: 1. because i gave the accordian a height, the entire background of the accordian was a different color that my body. problem 2 was the crollbar was ugly within the accordion. To fix both of these issuea I used:
+One issue I ran into during this process what that for some reason I wanted each part of the grid to have a set height, so I needed to fidn a way to add scrolling functionality when expanding the accordion. When doing this it caused 2 other issues: 1. because i gave the accordian a height, the entire background of the accordian was a different color that my body. problem 2 was the scrollbar was ugly within the accordion. To fix both of these issuea I used:
 '''
 .accordion-item {
 border-color: #495057;
